@@ -1,0 +1,349 @@
+Build a fully animated, cyber-aesthetic, Gen-Z dark rave themed personal portfolio website for me using the following tech stack: Next.js 14 (App Router) + TypeScript + TailwindCSS + Three.js + GSAP + Barba.js + Framer Motion. Code must be clean, modular, reusable, production-ready, and error-free. Do not explain anything — only provide full implementation with all files, folders, and code.
+
+GOAL:
+Create a highly interactive, unique, dark rave / cyberpunk Gen-Z portfolio with heavy focus on motion design, micro-interactions, and 3D visuals. Everything should feel like a futuristic rave OS — neon, glitchy, fluid, and smooth.
+
+TECH & LIBRARIES (MANDATORY):
+
+Next.js 14 (App Router)
+
+TypeScript
+
+TailwindCSS
+
+Three.js (3D scenes, background, particles)
+
+GSAP (scroll + micro animations)
+
+Barba.js (page transitions)
+
+Framer Motion (component-level transitions if helpful)
+
+THEME & VISUAL LANGUAGE:
+
+Base: pure black / deep charcoal background
+
+Neon rave colors: electric blue, cyan, magenta, purple, acid green accents
+
+Use glow: box-shadow + text-shadow to simulate neon tubes
+
+VHS / glitch micro animations on hover or during transitions
+
+Add subtle grain / noise overlay for gritty rave feel
+
+Use gradients like: radial neon glows and angular gradient borders
+
+GLOBAL EXPERIENCE FEATURES (IMPORTANT):
+
+Custom Cursor System:
+
+Replace default cursor with:
+
+Small central dot
+
+Larger blurred outer circle that follows with slight delay (GSAP)
+
+On hover over interactive elements (links, buttons, project cards), cursor grows, changes color, or shows label text (e.g., “View”, “Open”, “Play”).
+
+Page Transitions (Barba.js):
+
+All page changes must have a transition using Barba.js.
+
+Style:
+
+Rave-like screen wipe, glitch line, or expanding neon circle.
+
+Combine opacity + scale + slight RGB separation.
+
+Preloader / Intro Screen:
+
+On first load, show a rave-style intro:
+
+Animated logo or my initials (“HP”) with neon stroke + glow.
+
+Quick glitch text: “Booting RaveOS…”, “Loading Portfolio…”.
+
+Use GSAP timeline for preloader animation and then transition into Home page content.
+
+Sound / Audio Reactive Option (Optional but add hooks):
+
+Add a toggle button in the UI (e.g., “AUDIO MODE”).
+
+When enabled, make background visualizers react subtly to a dummy audio track or simple pseudo-random beat simulation (no need for full audio player; pseudo-react is fine).
+
+Keep sound off by default.
+
+SITE STRUCTURE / PAGES:
+
+PAGES: Home, About, Projects, Contact (all using App Router in app/)
+
+HOME PAGE:
+
+Fullscreen hero with Three.js scene:
+
+Neon particles, energy waves, or wireframe sphere.
+
+Rotate/move slightly with mouse movement (parallax feel).
+
+Animated intro text:
+
+Use GSAP split text effect: stagger each word/letter entrance.
+
+Short tagline and CTA buttons:
+
+“View Projects”, “Contact Me” buttons with magnetic hover (button moves slightly towards cursor).
+
+Background accent:
+
+Add diagonal neon grid or wave-like lines behind the hero.
+
+ABOUT PAGE:
+Sections:
+
+Hero strip:
+
+Neon framed profile image (circular or rounded card with glow).
+
+Name + Role + animated typewriter-like subtitle.
+
+Skills Area:
+
+Skill chips/pills arranged in a fluid layout.
+
+On hover: pill slightly scales, glows, and jitters very slightly.
+
+Timeline Area (Education + Experience):
+
+Vertical or horizontal timeline with neon connectors.
+
+Scroll-triggered reveal of each card using GSAP.
+
+PROJECTS PAGE:
+
+Project Filter Bar:
+
+Tabs or buttons for categories (e.g., “All”, “Web”, “3D”, “Experimental”).
+
+Filter animation: when changing category, project cards animate out and back in with stagger using GSAP or Framer Motion.
+
+Project Cards:
+
+3D tilt-on-hover effect (using CSS + JS/Framer Motion).
+
+Each card shows: title, short description, tech stack tags, CTA (“Live”, “Code”).
+
+Project Detail (Modal or Subpage):
+
+On click, open a modal or route to dynamic page /projects/[slug].
+
+Include hero image banner, role, tech used, features list, and links.
+
+CONTACT PAGE:
+
+Contact Form:
+
+Name, Email, Message fields.
+
+Neon inputs with focus glow.
+
+Submit button with strong hover animation (scale + glow pulse).
+
+Background:
+
+Three.js floating spheres or blobs, slowly moving.
+
+Social Links Bar:
+
+GitHub, LinkedIn, Email icons.
+
+On hover: icon emits glow ring or glitch flicker.
+
+CONTENT PLACEHOLDERS (USE THESE):
+NAME: Himanshu Prakash
+ROLE: Full-Stack Developer / Designer / Cloud Enthusiast
+
+ABOUT ME TEXT:
+“A passionate developer who builds immersive, animated, and high-performance digital experiences for the modern web. I love combining clean engineering with bold visual storytelling.”
+
+SKILLS (render as animated chips):
+
+HTML
+
+CSS
+
+JavaScript
+
+TypeScript
+
+React
+
+Next.js
+
+GSAP
+
+Three.js
+
+WebGL
+
+Node.js
+
+Express
+
+MongoDB
+
+Firebase
+
+Git & GitHub
+
+EDUCATION:
+
+B.Tech in Computer Science (Year–Year)
+
+EXPERIENCE:
+
+Freelance Developer (Year–Year) — Worked on modern web apps, landing pages, and animated experiences.
+
+Web Designer (Year–Year) — Designed and implemented responsive UI with focus on motion and interactivity.
+
+PROJECTS (USE PLACEHOLDERS STRUCTURE):
+Each project must have:
+
+Title
+
+Short 1–2 line description
+
+Tech stack tags
+
+Live link placeholder
+
+GitHub link placeholder
+
+CONTACT INFO (PLACEHOLDERS):
+
+Email: your-email@example.com
+
+GitHub: github.com/yourusername
+
+LinkedIn: linkedin.com/in/yourusername
+
+LAYOUT & COMPONENT STRUCTURE:
+Use this structure (or improved, but keep it clear):
+
+app/layout.tsx (root layout with global providers, fonts, Barba.js integration wrapper if needed)
+
+app/page.tsx (Home)
+
+app/about/page.tsx
+
+app/projects/page.tsx
+
+app/projects/[slug]/page.tsx (dynamic project details)
+
+app/contact/page.tsx
+
+Components (place in components/):
+
+components/layout/Navbar.tsx
+
+components/layout/Footer.tsx
+
+components/layout/PageTransition.tsx (can wrap content for Framer Motion + Barba or GSAP)
+
+components/ui/Button.tsx
+
+components/ui/SectionTitle.tsx
+
+components/ui/SkillChip.tsx
+
+components/ui/TimelineItem.tsx
+
+components/ui/ProjectCard.tsx
+
+components/ui/Preloader.tsx
+
+components/ui/CustomCursor.tsx
+
+components/forms/ContactForm.tsx
+
+components/3d/HeroScene.tsx
+
+components/3d/FloatingSpheres.tsx
+
+UTILS & STYLES:
+
+lib/utils.ts for helper functions (e.g., cn/classNames).
+
+tailwind.config.ts with extended theme:
+
+Custom colors: neonBlue, neonPink, neonPurple, neonCyan, neonGreen.
+
+Box shadows: neonGlow variants.
+
+styles/globals.css:
+
+Global resets, custom scrollbar, grain/noise overlay, body background.
+
+ANIMATION DETAILS:
+
+Use GSAP’s ScrollTrigger for scroll-based animations (section reveals, timelines, staggered cards).
+
+Use GSAP timelines for:
+
+Preloader
+
+Hero entrance
+
+Stagger loading of navbar links and primary CTAs.
+
+Use Framer Motion for simple mounting/unmounting (fade/slide) inside pages and modals.
+
+Make sure animations are performance-aware (no crazy heavy loops, reuse canvases).
+
+BARBA.JS INTEGRATION:
+
+Integrate Barba.js to handle page/view transitions.
+
+On route change:
+
+Animate old page out (fade/glitch).
+
+Animate new page in (scale-up + fade + glow swipe).
+
+RESPONSIVENESS:
+
+Fully responsive layout:
+
+Desktop: multi-column, breathing space, large type.
+
+Tablet: stacked sections.
+
+Mobile: single-column, simplified animations but still present (no breaking).
+
+ACCESSIBILITY & SEO:
+
+Use proper semantic HTML tags.
+
+Alt text on images.
+
+Meta tags in head (title, description) for each main page.
+
+DELIVERABLES (MANDATORY):
+Provide complete, runnable project:
+
+package.json with all dependencies.
+
+tsconfig.json.
+
+next.config.mjs or next.config.js.
+
+tailwind.config.ts + postcss.config.mjs + globals.css.
+
+All app/ routes and layouts.
+
+All components/ as described.
+
+All Three.js setup files and any shader files (fragment/vertex) if used.
+
+Dummy data for projects (e.g., in data/projects.ts).
+
+Basic README with install and run commands.
