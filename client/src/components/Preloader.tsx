@@ -84,7 +84,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
         }}
         data-testid="preloader-logo"
       >
-        HP
+        RK
       </div>
 
       <div
