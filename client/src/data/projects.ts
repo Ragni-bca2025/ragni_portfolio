@@ -125,6 +125,6 @@ export const experience = [
 
 export const socialLinks = {
   email: "your-email@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername"
+  github: "https://github.com/Ragni-bca2025",
+  linkedin: "https://www.linkedin.com/in/ragni-kumari-897771376/"
 };

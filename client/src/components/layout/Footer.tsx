@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <Zap className="w-5 h-5 text-neon-cyan" />
-              <span className="font-serif font-bold text-xl text-glow-cyan">HP</span>
+              <span className="font-serif font-bold text-xl text-glow-cyan">RK</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
               Building immersive digital experiences at the intersection of design and technology.
@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-neon-cyan/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground font-mono">
-            &copy; {currentYear} Himanshu Prakash. All rights reserved.
+            &copy; {currentYear} Ragni Kumari. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground font-mono">
             Built with React + Three.js + GSAP

@@ -69,7 +69,7 @@ export default function Home() {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-glow-cyan"
           data-testid="hero-title"
         >
-          Himanshu Prakash
+          Ragni Kumari
         </h1>
 
         <p

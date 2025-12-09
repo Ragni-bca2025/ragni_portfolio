@@ -55,7 +55,7 @@ export default function Navbar() {
               data-testid="nav-logo"
             >
               <Zap className="w-6 h-6 text-neon-cyan group-hover:text-neon-magenta transition-colors" />
-              <span className="font-serif font-bold text-xl text-glow-cyan">HP</span>
+              <span className="font-serif font-bold text-xl text-glow-cyan">RK</span>
             </div>
           </Link>
 
